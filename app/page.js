@@ -254,7 +254,7 @@ export default async function HomePage() {
               </h3>
             </AnimatedSection>
           </div>
-          <CoachSection coaches={coaches.length ? coaches : coachs} />
+          <CoachSection coaches={coaches} />
         </div>
       </section>
 
