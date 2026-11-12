@@ -11,7 +11,7 @@
 
 | 項目 | 連結 |
 | --- | --- |
-| 線上 Demo | _（部署後補上，建議使用 Vercel）_ |
+| 線上 Demo | https://sportify-team-frontend.onrender.com |
 | 後端 API Repo | https://github.com/Rean2127/sportify-team-backend |
 | 原始團隊專案 | https://github.com/Leo-Chang-97/sportify-team-frontend |
 
