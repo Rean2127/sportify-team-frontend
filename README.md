@@ -123,6 +123,9 @@ npm run start
 於專案根目錄建立 `.env.local`（此檔已被 `.gitignore` 忽略，請勿提交）：
 
 ```env
+# 後端 API。未設定時，lib/api-path.js 會使用 http://localhost:3005
+NEXT_PUBLIC_API_URL=http://localhost:3005
+
 # Firebase（Google 登入，皆為前端公開用的 NEXT_PUBLIC_*）
 NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
@@ -133,8 +136,7 @@ NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
 NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=your_measurement_id
 ```
 
-> 後端 API 位址目前定義於 `lib/api-path.js`（預設 `http://localhost:3005`）。
-> 若要部署，建議改用環境變數（例如 `NEXT_PUBLIC_API_URL`）並於 `next.config.mjs` 的 `images.remotePatterns` 加入正式網域。
+本機開發只開前端時，沿用上面的 `http://localhost:3005` 即可。正式環境的 `NEXT_PUBLIC_API_URL` 要設成後端網址，`next.config.mjs` 會用同一個位址允許後端圖片。
 
 ---
 
